@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <title>Catálogo General | Makro VC</title>
+    <meta name="description" content="Makro VC Catálogo: bicimotos, motos eléctricas, triciclos y kits solares en Cuba.">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+  
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Makro VC - Catálogo de Vehículos y Energía Solar">
+    <meta property="og:description" content="Descubre los mejores vehículos para desplazarse en Cuba y soluciones de energía solar en el Catálogo de Makro VC.">
+    <meta property="og:image" content="https://tusitio.com/assets/images/catalogo-preview.png">
+    <meta property="og:url" content="https://tusitio.com/catalogo.html">
+    <meta property="og:site_name" content="Makro VC">
+  
+   
+   
+    <script>
+      (function () {
+        try {
+         const theme = localStorage.getItem("makrovc_theme");
+         const finalTheme = theme === "dark" ? "dark" : "light";
+         document.documentElement.classList.add("theme-makro");
+         document.documentElement.setAttribute("data-theme", finalTheme);
+       } catch (e) {}
+     })();
+    </script>
+  
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+   <link rel="canonical" href="https://makrovc.net/catalogo.html" />
+   
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Catálogo Makro VC - Vehículos y Energía Solar">
+    <meta property="og:description" content="Explora nuestro catálogo completo de bicimotos, motos, baterías y paneles solares.">
+    <meta property="og:image" content="https://makrovc.net/assets/images/catalogo-preview.jpg">
+    <meta property="og:url" content="https://makrovc.net/catalogo.html">
+    <meta property="og:site_name" content="Makro VC">
+
+    <!-- ===== SCRIPTS ===== -->
+    <script defer src="assets/js/utils.min.js"></script>
+    <script defer src="assets/js/products.min.js"></script>
+    <script defer src="assets/js/main.min.js"></script>
+  </head>
+
+  <body>
+    <!-- ===== SIDEBAR ===== -->
+    <nav class="sidebar">
+      <div class="logo">Makro VC</div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#info">Más Información</a></li>
+      </ul>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">☰</button>
+  
+    <!-- ===== BOTON CAMBIAR MODO ===== -->
+    <button id="theme-toggle" aria-label="Cambiar modo" disabled>
+      <img src="assets/icons/moon.svg" alt="cambiar-modo">
+    </button>
+  
+    <main class="page-content">
+
+      <!-- ===== HERO ===== -->
+      <section class="hero fade-up">
+        <h1>Catálogo General Makro VC</h1>
+        <p>
+          Bicimotos, motos, motorinas, triciclos eléctricos y kits solares
+         diseñados para el día a día en Cuba.
+        </p>
+      </section>
+
+      <!-- ===== FILTROS ===== -->
+      <div class="filtro-catalogo-wrapper">
+        <div class="filtro-busqueda">
+          <input type="search" id="search" placeholder="Buscar producto…" enterkeyhint="search" >
+            <!-- Lupa flotante dentro del input -->
+            <button id="btn-buscar" class="btn-icon btn-buscar" aria-label="Buscar">
+              <img src="assets/icons/fa-search.svg" alt="Buscar">
+            </button>
+            <!-- Botón limpiar que aparece solo si hay texto -->
+           <button id="btn-limpiar" class="btn-icon btn-limpiar" aria-label="Limpiar filtros">
+             <img src="assets/icons/fa-times.svg" alt="Limpiar">
+           </button>
+        </div>
+        <!-- 1. Provincia -->
+        <div class="filtro-fila">
+          <div class="filtro-item filtro-provincia">
+            <label for="zona">Provincia:</label>
+            <select id="zona">
+              <option value="todas">Todas</option>
+              <option value="Villa Clara">Villa Clara</option>
+              <option value="Matanzas">Matanzas</option>
+              <option value="Cienfuegos">Cienfuegos</option>
+              <option value="Sancti Spiritus">Sancti Spiritus</option>
+              <option value="Ciego de Avila">Ciego de Avila</option>
+              <option value="La Habana">La Habana</option>
+              <option value="Artemisa">Artemisa</option>
+              <option value="Mayabeque">Mayabeque</option>
+              <option value="Pinar del Rio">Pinar del Rio</option>
+            </select>
+          </div>
+
+          <!-- 2. Categoría -->  
+          <div class="filtro-item filtro-categoria">
+            <label for="categoria">Categoría:</label>
+            <select id="categoria">
+              <option value="todas">Todas</option>
+              <option value="bicimotos">Bicimotos</option>
+              <option value="motos-electricas">Motos Eléctricas</option>
+              <option value="motorinas-combustion">Motorinas Combustión</option>
+              <option value="motos">Motos</option>
+              <option value="triciclos-electricos">Triciclos Eléctricos</option>
+              <option value="kits-solares">Kits Solares</option>
+              <option value="componentes-piezas">Componentes y Piezas</option>
+            </select>
+          </div>
+
+          <!-- 3. Orden por precio -->
+          <div class="filtro-item filtro-precio">
+            <label for="orden">Ordenar:</label>
+            <select id="orden">
+              <option value="default">Predeterminado</option>
+              <option value="asc">Menor a mayor</option>
+              <option value="desc">Mayor a menor</option>
+           </select>
+          </div>
+        </div>
+
+        <!-- Mensaje resultados -->
+        <div class="filtro-resultados" id="filtro-resultados"></div>
+      </div>
+
+      <!-- ===== CATEGORÍAS ===== -->
+
+      <section class="categoria productos" id="bicimotos">
+        <h2>Bicimotos Eléctricas</h2>
+        <div class="product-grid"></div>
+      </section>
+
+      <section class="categoria productos" id="motos-electricas">
+        <h2>Motos Eléctricas</h2>
+        <div class="product-grid"></div>
+      </section>
+
+      <section class="categoria productos" id="motorinas-combustion">
+        <h2>Motorinas de Combustión</h2>
+        <div class="product-grid"></div>
+      </section>
+
+      <section class="categoria productos" id="motos">
+       <h2>Motos</h2>
+       <div class="product-grid"></div>
+      </section>
+
+      <section class="categoria productos" id="triciclos-electricos">
+        <h2>Triciclos Eléctricos</h2>
+        <div class="product-grid"></div>
+      </section>
+
+      <section class="categoria productos" id="kits-solares">
+        <h2>Kits Solares</h2>
+        <div class="product-grid"></div>
+      </section>
+
+      <section class="categoria productos" id="componentes-piezas">
+        <h2>Componentes y Piezas</h2>
+        <div class="product-grid"></div>
+      </section>
+
+      <!-- Cargar + productos -->
+      <div class="cargar-mas-wrapper">
+        <button id="btn-cargar-mas" class="btn btn-cargar-mas">
+          Cargar más productos
+        </button>
+      </div>
+    </main>
+
+    <footer>
+      <p class="copyright">Keep Shopping | © 2026 Makro VC</p>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://makrovc.net/sitemap-index.xml

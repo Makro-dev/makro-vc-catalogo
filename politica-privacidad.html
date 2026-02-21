@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Política de Privacidad | Makro VC</title>
+    <meta name="description" content="Política de privacidad y uso de datos de Makro VC.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <meta property="og:site_name" content="Makro VC">
+    <meta property="og:title" content="Política de privacidad de Makro VC">
+    <meta property="og:description" content="Política de privacidad y uso de datos de Makro VC">
+    <meta property="og:url" content="https://tudominio.net/politica-privacidad.html">
+  
+    <script>
+      (function () {
+        try {
+         const theme = localStorage.getItem("makrovc_theme");
+         const finalTheme = theme === "dark" ? "dark" : "light";
+         document.documentElement.classList.add("theme-makro");
+         document.documentElement.setAttribute("data-theme", finalTheme);
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <!-- ===== SCRIPTS ===== -->
+    <script defer src="assets/js/utils.min.js"></script>
+    <script defer src="assets/js/main.min.js"></script>
+  </head>
+  <body>
+
+    <nav class="sidebar">
+      <div class="logo">Makro VC</div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+       </ul>
+    </nav>
+
+    <button class="hamburger" id="hamburger">☰</button>
+
+    <!-- ===== BOTON CAMBIAR MODO ===== -->
+    <button id="theme-toggle" aria-label="Cambiar modo" disabled>
+      <img src="assets/icons/moon.svg" alt="cambiar-modo">
+    </button>
+  
+    <main class="page-content">
+
+      <section class="hero fade-up">
+       <h1>Política de Privacidad</h1>
+       <p>Tu información es importante para nosotros.</p>
+      </section>
+
+      <section class="legal fade-up">
+       <p>
+         En Makro VC respetamos la privacidad de nuestros clientes. No recopilamos
+         información personal sin tu consentimiento.
+       </p>
+
+       <p>
+         Los datos compartidos a través de WhatsApp u otros medios se utilizan
+         únicamente para fines de atención al cliente y gestión de pedidos.
+       </p>
+
+       <p>
+         No compartimos información con terceros ni utilizamos tus datos con fines
+         publicitarios externos.
+       </p>
+
+       <p>
+         Al contactar con Makro VC aceptas esta política de privacidad.
+       </p>
+     </section>
+
+    </main>
+    <footer>
+      <p class="copyright">
+       Keep Shopping | © 2026 Makro VC
+      </p>
+    </footer>
+  </body>
+</html>
