@@ -372,10 +372,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // PRODUCTO.HTML – DETALLE INDIVIDUAL
     // ======================
     let productId = new URLSearchParams(location.search).get("id");
+    if (productId !== null) productId = String(productId);
 
     if (!productId) {
       const match = location.pathname.match(/producto-(.+)\.html$/);
-      if (match) productId = match[1];
+      if (match) productId = String(match[1]);
     }
 
     const productSection = document.querySelector(".producto-detalle");
@@ -388,7 +389,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   
     if (productId && typeof PRODUCTS !== "undefined") {
-      const product = PRODUCTS.find(p => p.id === productId);
+      const product = PRODUCTS.find(p => String(p.id) === productId);
     
       if (!product) {
         if (productSection) productSection.style.display = "none";
