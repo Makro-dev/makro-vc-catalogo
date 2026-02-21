@@ -14,6 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
     isProducto: document.getElementById("productImage")
   };
   // ======================
+  // DETECTOR DE PRODUCTO OG (OG ONLY)
+  // ======================
+  const isStaticOGProduct =
+  document.documentElement.hasAttribute("data-og-only") === true;
+  // ======================
   // ELEMENTOS COMUNES
   // ======================
   const hamburger = document.getElementById("hamburger");
@@ -479,6 +484,7 @@ document.addEventListener("DOMContentLoaded", () => {
           initContactButtons(whatsappBtn, callBtn);
         }
         // SEO dinámico y Open Graph
+        if (!isStaticOGProduct) {
         const seoTitle = document.getElementById("seoTitle");
         const seoDescription = document.getElementById("seoDescription");
         const ogTitle = document.getElementById("ogTitle");
@@ -504,7 +510,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   }
-  
+  } 
 /* =========================
    Auto-scroll suave Testimonios (solo móvil)
 ========================= */
