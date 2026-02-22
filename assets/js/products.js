@@ -3,7 +3,7 @@ const PRODUCTS = [
 
 // BICIMOTOS:
   {
-    id: "bicimoto-topmaq-evolution2026",
+    id:"bicimoto-topmaq-evolution2026",
     nombre: "Bicimoto TOPMAQ EVOLUTION 2026",
     categoria: "bicimotos",
     imagen: "assets/images/productos/bicimotos/bicimoto-topmaq-evolution2026.webp",
@@ -23,7 +23,7 @@ const PRODUCTS = [
   },
 
   {
-    id: "motico-wilz",
+    id:"motico-wilz",
     nombre: "Motico WILZ",
     categoria: "bicimotos",
     imagen: "assets/images/productos/bicimotos/motico-wilz.jpg",
@@ -44,7 +44,7 @@ const PRODUCTS = [
 
 // KITS SOLARES:
     {
-    id: "kit-solar-3kw-110v",
+    id:"kit-solar-3kw-110v",
     nombre: "Kit Solar Must 3kw (110v)",
     categoria: "kits-solares",
     imagen: "assets/images/productos/kits-solares/kit-solar-3kw(110v).jpg",
@@ -64,7 +64,7 @@ const PRODUCTS = [
   },
 
     {
-    id: "kit-solar-6kw-110-220v",
+    id:"kit-solar-6kw-110-220v",
     nombre: "Kit Solar Must 6kw (110/220v)",
     categoria: "kits-solares",
     imagen: "assets/images/productos/kits-solares/kit-solar-6kw(110-220v).jpg",
@@ -84,7 +84,7 @@ const PRODUCTS = [
   },
 
     {
-    id: "kit-solar-3kw-110v-2",
+    id:"kit-solar-3kw-110v-2",
     nombre: "Kit Solar Must 3kw (110v)",
     categoria: "kits-solares",
     imagen: "assets/images/productos/kits-solares/kit-solar-3kw(110v)2.jpg",
@@ -104,10 +104,10 @@ const PRODUCTS = [
   },
 
     {
-    id: "kit-solar-3-6kw-110v",
+    id:"kit-solar-3-6kw-110v",
     nombre: "Kit Solar Must 3.6kw (110v)",
     categoria: "kits-solares",
-    imagen: "assets/images/productos/kits-solares/kit-solar-3.6kw(110v).jpg",
+    imagen: "assets/images/productos/kits-solares/kit-solar-3-6kw(110v).jpg",
     precio: { usd: 3700, cup: null },
     precioAnterior: null,
     monedas: ["USD", "EURO", "ZELLE"],
@@ -124,7 +124,7 @@ const PRODUCTS = [
   },
 
     {
-    id: "kit-solar-3kw-110-220v",
+    id:"kit-solar-3kw-110-220v",
     nombre: "Kit Solar Must 3kw (110-220v)",
     categoria: "kits-solares",
     imagen: "assets/images/productos/kits-solares/kit-solar-3kw(110-220v).jpg",
@@ -144,7 +144,7 @@ const PRODUCTS = [
   },
 
     {
-    id: "kit-solar-6kw-110-220v-b",
+    id:"kit-solar-6kw-110-220v-b",
     nombre: "Kit Solar Must 6kw (110-220v)",
     categoria: "kits-solares",
     imagen: "assets/images/productos/kits-solares/kit-solar-6kw(110-220v)b.jpg",
@@ -164,7 +164,7 @@ const PRODUCTS = [
   },
 
     {
-    id: "kit-solar-6kw-110-220v-c",
+    id:"kit-solar-6kw-110-220v-c",
     nombre: "Kit Solar Must 6kw (110-220v)",
     categoria: "kits-solares",
     imagen: "assets/images/productos/kits-solares/kit-solar-6kw(110-220v)c.jpg",
@@ -184,7 +184,7 @@ const PRODUCTS = [
   },
 
     {
-    id: "kit-solar-6kw-110-220v-d",
+    id:"kit-solar-6kw-110-220v-d",
     nombre: "Kit Solar Must 6kw (110-220v)",
     categoria: "kits-solares",
     imagen: "assets/images/productos/kits-solares/kit-solar-6kw(110-220v)d.jpg",
@@ -204,7 +204,7 @@ const PRODUCTS = [
   },
 
     {
-    id: "kit-solar-6kw-110-220v-e",
+    id:"kit-solar-6kw-110-220v-e",
     nombre: "Kit Solar Must 6kw (110-220v)",
     categoria: "kits-solares",
     imagen: "assets/images/productos/kits-solares/kit-solar-6kw(110-220v)e.jpg",
@@ -224,7 +224,7 @@ const PRODUCTS = [
   },
 
     {
-    id: "kit-solar-10kw",
+    id:"kit-solar-10kw",
     nombre: "Kit Solar Must 10kw",
     categoria: "kits-solares",
     imagen: "assets/images/productos/kits-solares/kit-solar-10kw.jpg",
@@ -244,7 +244,7 @@ const PRODUCTS = [
   },
 
     {
-    id: "kit-solar-12kw-110-220v",
+    id:"kit-solar-12kw-110-220v",
     nombre: "Kit Solar Must 12kw (110-220v)",
     categoria: "kits-solares",
     imagen: "assets/images/productos/kits-solares/kit-solar-12kw(110-220v).jpg",
@@ -264,7 +264,7 @@ const PRODUCTS = [
   },
 
     {
-    id: "kit-solar-12kw-110-220v-b",
+    id:"kit-solar-12kw-110-220v-b",
     nombre: "Kit Solar Must 12kw (110-220v)",
     categoria: "kits-solares",
     imagen: "assets/images/productos/kits-solares/kit-solar-12kw(110-220v)b.jpg",
@@ -285,7 +285,7 @@ const PRODUCTS = [
 
 // COMPONENTES SOLARES:
     {
-    id: "bateria-must-24x200",
+    id:"bateria-must-24x200",
     nombre: "Bateria MUST 24x200",
     categoria: "componentes-piezas",
     imagen: "assets/images/productos/componentes-piezas/bateria-must-24x200.webp",
@@ -305,10 +305,10 @@ const PRODUCTS = [
   },
 
     {
-    id: "inversor-3kw-bateria-7kw",
+    id:"inversor-3kw-bateria-7kw",
     nombre: "Inversor MUST 3kw + Bateria MUST 7kw",
     categoria: "componentes-piezas",
-    imagen: "assets/images/productos/componentes-piezas/inversor-3kw+bateria-7kw.jpg",
+    imagen: "assets/images/productos/componentes-piezas/inversor-3kw-bateria-7kw.jpg",
     precio: { usd: 2300, cup: null },
     precioAnterior: null,
     monedas: ["USD", "EURO", "ZELLE"],

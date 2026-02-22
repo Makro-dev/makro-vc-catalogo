@@ -367,7 +367,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   // BLINDAJE
-  if (PAGE.isProducto && typeof PRODUCTS !== "undefined") {
+  if (PAGE.isProducto && !isStaticOGProduct && typeof PRODUCTS !== "undefined") {
     // ======================
     // PRODUCTO.HTML – DETALLE INDIVIDUAL
     // ======================
