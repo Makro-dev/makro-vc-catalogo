@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://makrovc.net/sitemap-index.xml
+Sitemap: https://makro-vc-catalogo.pages.dev/sitemap-index.xml
