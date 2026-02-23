@@ -2,23 +2,23 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <sitemap>
-    <loc>https://makrovc-catalogo.netlify.app/sitemap-bicimotos.xml</loc>
-    <lastmod>2026-02-23</lastmod>
+    <loc>https://makro-vc-catalogo.pages.dev/sitemap-bicimotos.xml</loc>
+    <lastmod>2026-02-22</lastmod>
   </sitemap>
 
   <sitemap>
-    <loc>https://makrovc-catalogo.netlify.app/sitemap-kits-solares.xml</loc>
-    <lastmod>2026-02-23</lastmod>
+    <loc>https://makro-vc-catalogo.pages.dev/sitemap-kits-solares.xml</loc>
+    <lastmod>2026-02-22</lastmod>
   </sitemap>
 
   <sitemap>
-    <loc>https://makrovc-catalogo.netlify.app/sitemap-componentes-piezas.xml</loc>
-    <lastmod>2026-02-23</lastmod>
+    <loc>https://makro-vc-catalogo.pages.dev/sitemap-componentes-piezas.xml</loc>
+    <lastmod>2026-02-22</lastmod>
   </sitemap>
 
   <sitemap>
-    <loc>https://makrovc-catalogo.netlify.app/sitemap.xml</loc>
-    <lastmod>2026-02-23</lastmod>
+    <loc>https://makro-vc-catalogo.pages.dev/sitemap.xml</loc>
+    <lastmod>2026-02-22</lastmod>
   </sitemap>
 
 </sitemapindex>
