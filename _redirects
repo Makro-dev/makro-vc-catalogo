@@ -1,0 +1,9 @@
+# ============================
+# MAKRO VC – URLS LIMPIAS PRODUCTOS
+# ============================
+
+# Reescribe URLs limpias de productos
+/producto-:id.html   /producto.html?id=:id   200
+
+# Seguridad: evita que Netlify intente buscar archivos reales
+/*                   /index.html              200!
