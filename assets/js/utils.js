@@ -27,13 +27,33 @@ function renderStars(value = 0) {
 // =========================
 const CONTACT_PHONE = "5356657785";
 
+function getCleanProductURL() {
+  // 1️⃣ Si ya estamos en un producto-*.html, usarlo
+  const match = location.pathname.match(/producto-(.+)\.html$/);
+  if (match) {
+    return location.origin + location.pathname;
+  }
+
+  // 2️⃣ Si estamos en producto.html?id=...
+  const id = new URLSearchParams(location.search).get("id");
+  if (id) {
+    return `${location.origin}/producto-${id}.html`;
+  }
+
+  // 3️⃣ Fallback seguro
+  return location.href;
+}
+
 function initContactButtons(whatsappBtn, callBtn) {
   if (whatsappBtn) {
+    const cleanURL = getCleanProductURL();
+
     const message = `
-    Hola Makro VC 👋
-    Estoy interesado en este producto:
-    ${window.location.href}
-    `;
+Hola Makro VC 👋
+Estoy interesado en este producto:
+${cleanURL}
+    `.trim();
+
     whatsappBtn.href = `https://wa.me/${CONTACT_PHONE}?text=${encodeURIComponent(message)}`;
     whatsappBtn.target = "_blank";
     whatsappBtn.rel = "noopener noreferrer";
